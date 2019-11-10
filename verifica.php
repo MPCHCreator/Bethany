@@ -5,16 +5,18 @@
     $u=$_POST['correo'];
     $p=$_POST['contrasena'];
     $conn= getConexion();
-    $consulta ="SELECT *".
+    $consulta ="SELECT id_usuario".
                " FROM usuario as u". 
                " WHERE correo = '$u'". 
                " AND contraseña = '$p'";
 
 
     $resultado= mysqli_query($conn, $consulta);
+    $renglon= mysqli_fetch_assoc($resultado);
+    $id = $renglon['id_usuario'];
           
     if(mysqli_num_rows($resultado)>0){
-        $_SESSION['usuario'] = "ok";      
+        $_SESSION['usuario'] = $id;      
         header("Location: index.php");
     }else{
         $_SESSION['mensaje'] = "Usuario no valido";

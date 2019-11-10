@@ -43,10 +43,12 @@ session_start();
                 <li><a href="#feature">¿Quienes somos?</a></li>
                 <li><a href="#portfolio">Nosotros</a></li>
                 <li><a href="#contact">Contactanos</a></li>
-                <?php if (isset($_SESSION['usuario'])) : echo '<li><a href="eliminar_session.php">Cerrar sesion</a></li>';
+                <?php 
+                if (isset($_SESSION['usuario'])) : echo '<li><a href="contratarServicio.php">Contratar Servicio</a></li>'; endif;
+                if (isset($_SESSION['usuario'])) : echo '<li><a href="eliminar_session.php">Cerrar sesion</a></li>';
                 else :
                 echo '<li><a href="iniciar_sesion.php">Iniciar Sesión</a></li>';
-                endif;
+                endif;         
                 ?>
               </ul>
             </div>

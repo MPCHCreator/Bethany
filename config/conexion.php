@@ -18,5 +18,20 @@ function getConexion(){
     mysqli_query($conn,"SET NAMES utf8");
     return $conn;  
 }
+function consultaServicio($conn, $servicio){
+    
+    $consulta ="SELECT TotalUsuarios FROM ".$servicio.";";
+
+
+    $resultado= mysqli_query($conn, $consulta);
+    $renglon= mysqli_fetch_assoc($resultado);
+    $uT = $renglon['TotalUsuarios'];
+          
+    if(mysqli_num_rows($resultado)>0){
+        return $uT;     
+    }else{
+        return null;
+    }
+}
 ?>
 
