@@ -69,7 +69,7 @@ and open the template in the editor.
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" name="email"  placeholder="Email" required="true">
+                                        <input type="email" class="form-control" name="email"  placeholder="fer@gmail.com" required="true">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputPassword4">Contraseña</label>
@@ -79,13 +79,13 @@ and open the template in the editor.
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Nombre</label>
-                                        <input type="text" class="form-control" name="nombre" placeholder="Contraseña" required="true" pattern="[A-Za-zA-ZñÑáéíóúÁÉÍÓÚ\s ]{1,150}">
+                                        <input type="text" class="form-control" name="nombre" placeholder="Fernando" required="true" pattern="[A-Za-zA-ZñÑáéíóúÁÉÍÓÚ\s ]{1,150}">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Apellidos</label>
-                                        <input type="text" class="form-control" name="apellido" placeholder="Contraseña" required="true" pattern="[A-Za-zA-ZñÑáéíóúÁÉÍÓÚ\s ]{1,150}">
+                                        <input type="text" class="form-control" name="apellido" placeholder="Paredes Alonso" required="true" pattern="[A-Za-zA-ZñÑáéíóúÁÉÍÓÚ\s ]{1,150}">
                                     </div>
                                 </div>
                                 <!-- <div class="form-group">
